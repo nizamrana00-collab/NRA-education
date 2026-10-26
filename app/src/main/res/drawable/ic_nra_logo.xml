@@ -1,0 +1,70 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Shield / Crest Background -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M54,14 L84,26 C84,56 70,78 54,92 C38,78 24,56 24,26 Z" />
+    
+    <!-- Inner Shield (Deep Purple) -->
+    <path
+        android:fillColor="#311B92"
+        android:pathData="M54,19 L80,29.5 C80,55 67.5,74 54,86 C40.5,74 28,55 28,29.5 Z" />
+
+    <!-- Academic Mortarboard / Graduation Cap -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M54,26 L34,35 L54,44 L74,35 Z" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M44,40.5 L44,48 C44,52 64,52 64,48 L64,40.5 L54,45 Z" />
+    <!-- Tassel -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M68,36 L75,44 L75,52" />
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M73,50 L77,50 L76,55 L74,55 Z" />
+
+    <!-- Open Book of Knowledge -->
+    <!-- Left Page -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35,53 C41,53 47,51 52,48 L52,65 C47,68 41,70 35,70 Z" />
+    <!-- Right Page -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M73,53 C67,53 61,51 56,48 L56,65 C61,68 67,70 73,70 Z" />
+    <!-- Book Spine & Details -->
+    <path
+        android:strokeColor="#FFC107"
+        android:strokeWidth="1.5"
+        android:pathData="M54,48 L54,67" />
+    <path
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1"
+        android:pathData="M39,57 L48,55 M39,61 L48,59 M60,55 L69,57 M60,59 L69,61" />
+
+    <!-- Monogram Plaque (N R A) -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M33,73 L75,73 L71,81 L37,81 Z" />
+    
+    <!-- Letter N -->
+    <path
+        android:fillColor="#21104D"
+        android:pathData="M39,79 L39,75 L41,75 L43,78 L43,75 L44.5,75 L44.5,79 L42.5,79 L40.5,76 L40.5,79 Z" />
+    <!-- Letter R -->
+    <path
+        android:fillColor="#21104D"
+        android:pathData="M48,75 L52,75 C53,75 53.8,75.5 53.8,76.5 C53.8,77.3 53.2,77.8 52.3,77.9 L54,79 L52.2,79 L50.8,77.8 L49.5,77.8 L49.5,79 L48,79 Z M49.5,76.8 L51.8,76.8 C52.2,76.8 52.4,76.6 52.4,76.4 C52.4,76.1 52.2,75.9 51.8,75.9 L49.5,75.9 Z" />
+    <!-- Letter A -->
+    <path
+        android:fillColor="#21104D"
+        android:pathData="M57.5,79 L60,75 L61.5,75 L64,79 L62.4,79 L62.8,78 L59.7,78 L59.1,79 Z M60.2,77.1 L61.3,77.1 L60.7,75.9 Z" />
+
+</vector>

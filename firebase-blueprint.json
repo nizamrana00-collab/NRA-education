@@ -1,0 +1,99 @@
+{
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "fields": {
+        "userId": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "createdAt": { "type": "timestamp" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    },
+    "Student": {
+      "collection": "users/{userId}/students",
+      "fields": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "grade": { "type": "string" },
+        "guardianName": { "type": "string" },
+        "phone": { "type": "string" },
+        "address": { "type": "string" },
+        "admissionDate": { "type": "string" },
+        "batchId": { "type": "string", "optional": true },
+        "monthlyFee": { "type": "number" },
+        "billingDayAnchor": { "type": "number" },
+        "status": { "type": "string" },
+        "notes": { "type": "string", "optional": true },
+        "createdAt": { "type": "timestamp" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    },
+    "Batch": {
+      "collection": "users/{userId}/batches",
+      "fields": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "grade": { "type": "string" },
+        "schedule": { "type": "string" },
+        "defaultFee": { "type": "number" },
+        "notes": { "type": "string", "optional": true },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "BillingCycle": {
+      "collection": "users/{userId}/cycles",
+      "fields": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "studentId": { "type": "string" },
+        "periodStart": { "type": "string" },
+        "periodEnd": { "type": "string" },
+        "dueDate": { "type": "string" },
+        "originalFee": { "type": "number" },
+        "openingBalance": { "type": "number" },
+        "adjustments": { "type": "number" },
+        "totalCharge": { "type": "number" },
+        "allocatedAmount": { "type": "number" },
+        "closingBalance": { "type": "number" },
+        "status": { "type": "string" },
+        "notes": { "type": "string", "optional": true },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "Payment": {
+      "collection": "users/{userId}/payments",
+      "fields": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "studentId": { "type": "string" },
+        "amountReceived": { "type": "number" },
+        "paymentDate": { "type": "string" },
+        "paymentMethod": { "type": "string" },
+        "payerName": { "type": "string", "optional": true },
+        "referenceId": { "type": "string", "optional": true },
+        "notes": { "type": "string", "optional": true },
+        "unallocatedCredit": { "type": "number" },
+        "isReversed": { "type": "boolean" },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "BreakRecord": {
+      "collection": "users/{userId}/breaks",
+      "fields": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "studentId": { "type": "string" },
+        "startDate": { "type": "string" },
+        "endDate": { "type": "string", "optional": true },
+        "eligibleDays": { "type": "number" },
+        "reason": { "type": "string" },
+        "extensionDecision": { "type": "string" },
+        "isApplied": { "type": "boolean" },
+        "createdAt": { "type": "timestamp" }
+      }
+    }
+  }
+}
